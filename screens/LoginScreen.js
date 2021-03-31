@@ -24,7 +24,7 @@ const LoginScreen = ({ navigation }) => {
 
     return (
         <KeyboardAvoidingView behavior='padding' style={styles.container}>
-            <StatusBar style="light" />
+            <StatusBar style="dark" />
             <Image 
                 source={require('./instachat-logo.png')}
                 style={{ width: 400, height: 200 }}
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     button: {
         width: 200,
         marginTop: 10,
-        backgroundColor: "#FDD100",
+        backgroundColor: "#8B0D32",
     },
     
 })

@@ -31,7 +31,7 @@ const RegisterScreen = ({ navigation}) => {
 
     return (
         <KeyboardAvoidingView behavior="padding" style={styles.container}>
-            <StatusBar style="light" />
+            <StatusBar style="dark" />
             <Text h3 style={{ marginBottom: 50 }}>
                 Create InstaChat Account
             </Text>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     button: {
         width: 200,
         marginTop: 10,
-        backgroundColor: "#FDD100"
+        backgroundColor: "#8B0D32"
     },
     inputContainer: {
         width: 300,

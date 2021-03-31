@@ -16,6 +16,9 @@ const ChatScreen = ({ navigation, route }) => {
             title: "Chat",
             headerBackTitleVisible: false,
             headerTitleAlign: "left",
+            headerStyle: { backgroundColor: "#8B0D32" },
+            headerTitleStyle: { color: '#FDD100' },
+            headerTintColor: "black",
             headerTitle: () => (
                 <View
                     style={{
@@ -70,7 +73,7 @@ const ChatScreen = ({ navigation, route }) => {
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: "white" }}>
-            <StatusBar style="light" />
+            <StatusBar style="dark" />
             <KeyboardAvoidingView
                 behavior={Platform.OS === "ios" ? "padding" : "height"}
                 style={styles.container}
@@ -107,10 +110,10 @@ const ChatScreen = ({ navigation, route }) => {
                                             containerStyle={{
                                                 position: "absolute",
                                                 bottom: -15,
-                                                right: -5,
+                                                left: -5,
                                             }}
                                             bottom={-15}
-                                            right={-5}
+                                            left={-5}
                                             size={30}
                                             source={{
                                                 uri: data.photoURL,
@@ -167,15 +170,15 @@ const styles = StyleSheet.create({
         position: "relative"
     },
     senderText: {
-        color: "#FDD100",
+        color: "white",
         fontWeight: "500",
-        marginLeft: 10,
+        marginLeft: 0,
         marginBottom: 15,
     },
     senderName: {
         left: 10,
         paddingRight: 10,
-        fontSize: 10,
+        fontSize: 12,
         color: "white"
     },
     footer: {
